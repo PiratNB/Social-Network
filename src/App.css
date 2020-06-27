@@ -15,6 +15,10 @@
   background-color: cadetblue;
 }
 
+.header img {
+  align-items: flex-start;
+}
+
 .nav {
   grid-area: n;
   background-color: darksalmon;
