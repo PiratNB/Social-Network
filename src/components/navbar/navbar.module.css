@@ -4,22 +4,17 @@
     padding: 20px;
 }
 
-.item {
-    color: white;
-    font-size: 25px;
-}
-
-.item.active {
+.item a.active {
     color: tomato;
 }
 
-.item a {
-    text-decoration: none;
-    color: white;
+.item {
+    font-size: 25px;
 }
 
-.item a:visited {
+.item a {
     color: white;
+    text-decoration: none;
 }
 
 .item a:hover {
