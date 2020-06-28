@@ -12,3 +12,16 @@
 .item.active {
     color: tomato;
 }
+
+.item a {
+    text-decoration: none;
+    color: white;
+}
+
+.item a:visited {
+    color: white;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
