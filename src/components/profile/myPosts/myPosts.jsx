@@ -1,5 +1,4 @@
 import React from "react";
-import c from "./myPosts.module.css";
 import Post from "./post/post";
 
 const MyPosts = () => {
@@ -11,9 +10,9 @@ const MyPosts = () => {
           <button>Add post</button>
       </div>
       <div>New post</div>
-      <Post />
-      <Post />
-      <Post />
+      <Post message="Привет! Как дела?" likes="4"/>
+      <Post message="Перезвони! Кое-что расскажу!" likes="20"/>
+      <Post message="С Днем рождения!" likes="101"/>
     </div>
   );
 };
