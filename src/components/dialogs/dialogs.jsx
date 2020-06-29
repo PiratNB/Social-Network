@@ -1,31 +1,22 @@
 import React from "react";
 import c from "./dialogs.module.css";
-import { NavLink } from "react-router-dom";
+import Dialog from "./dialog/dialog";
+import Message from "./message/message";
 
 const Dialogs = () => {
   return (
     <div className={c.dialogs}>
       <div className={c.dialogsItems}>
-        <div className={c.dialog + ` ` + c.active}>
-          <NavLink to="/dialogs/1">Alexey</NavLink>
-        </div>
-        <div className={c.dialog}>
-          <NavLink to="/dialogs/2">Daha</NavLink>
-        </div>
-        <div className={c.dialog}>
-          <NavLink to="/dialogs/3">Marina</NavLink>
-        </div>
-        <div className={c.dialog}>
-          <NavLink to="/dialogs/4">Dmitriy</NavLink>
-        </div>
-        <div className={c.dialog}>
-          <NavLink to="/dialogs/5">Sasha</NavLink>
-        </div>
+        <Dialog name="Alexey" id="1" />
+        <Dialog name="Daha" id="2" />
+        <Dialog name="Marina" id="3" />
+        <Dialog name="Dmitriy" id="4" />
+        <Dialog name="Sasha" id="5" />
       </div>
       <div className={c.messages}>
-        <div className={c.message}>Привет!</div>
-        <div className={c.message}>Привет, как дела?</div>
-        <div className={c.message}>Привет, мы знакомы?</div>
+        <Message text="Привет!" />
+        <Message text="Привет, как дела?" />
+        <Message text="Привет, мы знакомы?" />
       </div>
     </div>
   );
