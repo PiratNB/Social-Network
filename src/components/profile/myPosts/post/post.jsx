@@ -10,11 +10,14 @@ const Post = (props) => {
             src="https://pm1.narvii.com/6889/74979d4d2744ec6e27995b6e866f091d04c0b40cr1-515-414v2_uhq.jpg"
             alt="avatar"
           />
-          {props.message}
+          <div className={c.text}>{props.message}</div>
           <div>
-            <span>Like <b>{props.likes}</b></span>
+            <span>
+              Like <b>{props.likesCount}</b>
+            </span>
           </div>
         </div>
+        <hr />
       </div>
     </div>
   );

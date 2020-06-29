@@ -2,7 +2,14 @@ import React from "react";
 import Post from "./post/post";
 import c from "./myPosts.module.css";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+
+  let postData = [
+    {id: 1, message: "Привет! Как дела?", likesCount: 4},
+    {id: 2, message: "Перезвони! Кое-что расскажу!", likesCount: 20},
+    {id: 3, message: "С Днем рождения!", likesCount: 101}
+  ];
+
   return (
     <div>
       <div className={c.postsBlock}>
@@ -14,9 +21,9 @@ const MyPosts = () => {
           <button>Add post</button>
         </div>
       </div>
-      <Post message="Привет! Как дела?" likes="4" />
-      <Post message="Перезвони! Кое-что расскажу!" likes="20" />
-      <Post message="С Днем рождения!" likes="101" />
+      <Post message={postData[0].message} likesCount={postData[0].likesCount}/>
+      <Post message={postData[1].message} likesCount={postData[1].likesCount}/>
+      <Post message={postData[2].message} likesCount={postData[2].likesCount}/>
     </div>
   );
 };

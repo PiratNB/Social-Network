@@ -3,10 +3,11 @@
 }
 
 .item img {
-    width: 40px;
-    height: 40px;
+    width        : 40px;
+    height       : 40px;
     border-radius: 30px;
 }
+
 .posts {
     padding: 10px;
 }
