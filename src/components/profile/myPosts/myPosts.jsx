@@ -1,7 +1,7 @@
 import React from "react";
 import Post from "./post/post";
 import c from "./myPosts.module.css";
-import { addPostActionCreator, onPostChangeActionCreator } from "../../../redux/state";
+import { addPostActionCreator, onPostChangeActionCreator } from "../../../redux/profile-reducer";
 
 const MyPosts = (props) => {
   let postsElements = props.posts.map((p) => (
@@ -11,7 +11,7 @@ const MyPosts = (props) => {
   let newPostElement = React.createRef();
 
   let addPost = () => {
-    props.dispatch(addPostActionCreator());
+    props.dispatch(addPostActionCreator ());
   };
 
 let onPostChange = () => {
@@ -24,7 +24,7 @@ let onPostChange = () => {
       <div className={c.postsBlock}>
         <h3>Мои посты:</h3>
         <div>
-          <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText}/>
+          <textarea placeholder='Введите сообщение' onChange={onPostChange} ref={newPostElement} value={props.newPostText}/>
         </div>
         <div>
           <button
