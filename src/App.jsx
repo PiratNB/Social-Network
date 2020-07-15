@@ -10,7 +10,6 @@ import Settings from "./components/settings/settings";
 import DialogsContainer from "./components/dialogs/dialogsContainer";
 
 const App = (props) => {
-  debugger
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -20,17 +19,13 @@ const App = (props) => {
           <Route
             path="/dialogs"
             render={() => (
-              <DialogsContainer
-              store={props.store}
-              />
+              <DialogsContainer />
             )}
           />
           <Route
             path="/profile"
             render={() => (
-              <Profile
-                store={props.store}
-              />
+              <Profile />
             )}
           />
           <Route path="/news" render={() => <News />} />
